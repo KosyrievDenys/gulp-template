@@ -1,10 +1,4 @@
 
-@media (any-hover: hover) {
-  .button:hover {
-    background-color: #825c10;
-  }
-}
-
 * {
   outline:     none;
   box-sizing:  border-box;
@@ -28,6 +22,10 @@ section {
 a {
   text-decoration: none;
   cursor:          pointer;
+}
+
+a, input, select, button {
+  transition: .3s linear;
 }
 
 body {
@@ -57,10 +55,18 @@ main {
   position:  relative;
 }
 
-@media screen and (max-width: 991.98px) {
-
+li {
+  list-style: none;
 }
 
-@media screen and (max-width: 567px) {
-
+button {
+  border:           0;
+  background-color: #fff;
+  cursor:           pointer;
+  text-transform:   uppercase;
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
 }
+
+
